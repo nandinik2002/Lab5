@@ -71,8 +71,8 @@ public class AirlineSystem {
 		public void printGraph () {
 			for(int i = 0; i < cityNames.length; i++){
       	System.out.print(cityNames[i]+":");
-      for (var a : G.adj(i)) {
-        System.out.print(cityNames[((DirectedEdge) a).to()]+" ");
+      for (var j : G.adj(i)) {
+        System.out.print(cityNames[((DirectedEdge) j).to()]+" ");
       }
       	System.out.println();
     }
